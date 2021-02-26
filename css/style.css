@@ -1,0 +1,429 @@
+/* font-family: 'Merriweather Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Sacramento', cursive; */
+section {
+  width: 100%;
+  padding: 0 0 0 15%;
+}
+
+.bottom-container {
+  position: relative;
+  /* background-color: #89BEFF; */
+  border-bottom: 0;
+  padding: 10% 15% 7%;
+  text-align: center;
+  /* padding-right: 0; */
+}
+
+.footer-link {
+  margin: 10px 20px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  color: #07448F;
+}
+
+.footer-link:hover {
+  text-decoration: none;
+}
+
+.copyright {
+  color: #8F8F8F;
+  margin: 2% auto;
+}
+
+.my-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.my-tooltip .my-tooltiptext {
+  visibility: hidden;
+  /* width: 200px; */
+  bottom: 100%;
+  left: 50%;
+  font-size: 1rem;
+  margin-left: -100px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  opacity: 0;
+  transition: opacity 1s;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.my-tooltip .my-tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.my-tooltip:hover .my-tooltiptext {
+  margin-bottom: 20px;
+  visibility: visible;
+  padding: 1% 5%;
+  opacity: 1;
+}
+
+body {
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: #222831;
+  /* background-image: linear-gradient(red,yellow); */
+}
+
+i {
+  opacity: 0.5;
+}
+
+li {
+  border-bottom: 1px dotted #ccc;
+}
+
+.top-section {
+  background-image: linear-gradient(#032a33, #222831);
+  /* background-color: #032a33; */
+}
+
+.bottom-section {
+  background-image: linear-gradient(#222831, #032a33);
+}
+
+.sidenav {
+  height: 100%;
+  width: 12%;
+  padding-left: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.context {
+  padding: 0 10%;
+  text-align: left;
+  line-height: 2
+}
+
+.state {
+  color: #64dfdf;
+}
+
+.animation-box {
+  /* background-color: #8f8f8f; */
+  width: 90%;
+  height: 500px;
+  position: relative;
+}
+
+.animation-box:hover .state {
+  animation-play-state: running;
+}
+
+.navbar-brand {
+  font-size: 5rem;
+}
+
+.my-name {
+  font-size: 1rem;
+}
+
+.navbar {
+  /* float: left; */
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #64dfdf;
+  ;
+}
+
+.main {
+  text-align: left;
+  /* margin-left:12%; /* Same as the width of the sidenav */
+  /* padding:  0 2% 10%; */
+}
+
+.d {
+  display: inline-block;
+}
+
+.intro {
+  font-size: 6.25rem;
+  font-weight: bold;
+}
+
+.top-intro {
+  padding-left: 10px;
+}
+
+pre {
+  color: #fff;
+  font-family: 'Sacramento', cursive;
+}
+
+.row {
+  /* padding-left: 15%; */
+  margin: 0;
+  height: 100%;
+}
+
+.html {
+  animation-name: html;
+}
+
+.css {
+  animation-name: css;
+}
+
+.javascript {
+  animation-name: javascript;
+}
+
+.python {
+  animation-name: python;
+}
+
+.bootstrap {
+  animation-name: bootstrap;
+}
+
+.java {
+  animation-name: java;
+}
+
+.java, .bootstrap, .html, .css, .javascript, .python {
+  position: absolute;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  z-index: -1;
+  animation-direction: alternate;
+  transition-timing-function: linear;
+  animation-play-state: paused;
+}
+
+/* .container:hover .animation-box{
+  animation-name: name12;
+
+} */
+#images {
+  padding-left: 10%;
+}
+
+img {
+  float: right;
+  width: 100%;
+  height: 50%;
+}
+
+@keyframes html {
+  0% {
+    font-size: 1rem;
+    left: 25%;
+    top: 10%;
+  }
+
+  25% {
+    font-size: 2rem;
+    left: 80%;
+    top: 50%;
+  }
+
+  50% {
+    font-size: 3rem;
+    left: 40%;
+    top: 85%;
+  }
+
+  75% {
+    font-size: 2rem;
+    left: 20%;
+    top: 20%;
+  }
+
+  100% {
+    font-size: 1rem;
+    left: 0;
+    top: 0;
+  }
+}
+
+@keyframes css {
+  0% {
+    font-size: 3rem;
+    left: 40%;
+    top: 85%;
+  }
+
+  50% {
+    font-size: 1rem;
+    left: 75%;
+    top: 20%;
+  }
+
+  100% {
+    font-size: 3rem;
+    left: 10%;
+    top: 80%;
+  }
+}
+
+@keyframes javascript {
+  0% {
+    font-size: 1rem;
+    left: 25%;
+    top: 0px;
+  }
+
+  50% {
+    font-size: 3rem;
+    left: 10%;
+    top: 45%;
+  }
+
+  100% {
+    font-size: 1rem;
+    left: 45%;
+    top: 80%;
+  }
+}
+
+@keyframes python {
+  0% {
+    font-size: 1rem;
+    left: 80%;
+    top: 0px;
+  }
+
+  50% {
+    font-size: 3rem;
+    left: 50%;
+    top: 75%;
+  }
+
+  100% {
+    font-size: 1rem;
+    left: 90%;
+    top: 45%;
+  }
+}
+
+@keyframes java {
+  0% {
+    font-size: 1.5rem;
+    left: 0%;
+    top: 80%;
+  }
+
+  50% {
+    font-size: 3rem;
+    left: 0;
+    top: 55%;
+  }
+
+  100% {
+    font-size: 1rem;
+    left: 90%;
+    top: 5%;
+  }
+}
+
+@keyframes bootstrap {
+  from {
+    font-size: 1.5rem;
+    left: 45%;
+    top: 40%;
+    transform: rotate(0deg) translateX(10px) rotate(0deg);
+  }
+
+  to {
+    font-size: 1.5rem;
+    left: 45%;
+    top: 40%;
+    transform: rotate(360deg) translateX(200px) rotate(-360deg);
+  }
+}
+
+@media (max-height: 600px) {
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}
+
+@media (max-width:800px) {
+  .grid {
+    /* display: hidden; */
+    height:20%;
+  }
+
+  .grid__item {
+    opacity: 0;
+  }
+
+
+  }
+
+@media (min-width: 100px) {
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      width: 85%;
+      position: absolute;
+      z-index: 1;
+      height: 650px;
+    }
+
+    .grid__item {
+      height: 60px;
+      width: 60px;
+      background: #64dfdf;
+      opacity: 0;
+      border-radius: 10px;
+      transition: opacity 2s ease 0.4s, transform 0.8s ease;
+      transform: scale(1);
+    }
+
+    .grid__item:hover {
+      opacity: 0.8;
+      transition: opacity 0.2s ease;
+      transform: scale(1.04);
+    }
+  }
+@media (max-width:600px) {
+    .grid {
+      display: hidden;
+    }
+
+    .grid__item {
+      opacity: 0;
+    }
+    .intro{
+      font-size: 2.5rem;
+    }
+
+    section {
+      padding: 0;
+    }
