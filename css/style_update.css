@@ -126,6 +126,7 @@ li {
   width: 90%;
   height: 500px;
   position: relative;
+  float: right;
 }
 
 .animation-box:hover .state {
@@ -235,8 +236,11 @@ img {
   float: right;
   width: 100%;
   height: 50%;
+  opacity: 0.5;
 }
-
+img:hover{
+  opacity: 1;
+}
 @keyframes html {
   0% {
     font-size: 1rem;
@@ -365,7 +369,7 @@ img {
   }
 }
 
-@media (max-height: 600px) {
+@media (max-height: 400px) {
   .sidenav {
     width: 100%;
     height: auto;
@@ -378,15 +382,27 @@ img {
     /* display: hidden; */
     height:20%;
   }
-
+  #images{
+    padding-left: 0;
+  }
+  section {
+    padding: 0;
+  }
   .grid__item {
     opacity: 0;
   }
-
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+   .state {
+    animation-play-state: running;
+  }
 
   }
 
-@media (min-width: 100px) {
+@media (min-width: 800px) {
     .grid {
       display: flex;
       flex-wrap: wrap;
@@ -408,7 +424,7 @@ img {
 
     .grid__item:hover {
       opacity: 0.8;
-      transition: opacity 0.2s ease;
+      transition: opacity  0.2s ease;
       transform: scale(1.04);
     }
   }
