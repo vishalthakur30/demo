@@ -369,13 +369,13 @@ img:hover{
   }
 }
 
-@media (max-height: 400px) {
+/* @media (max-height: 400px) {
   .sidenav {
     width: 100%;
     height: auto;
     position: relative;
   }
-}
+} */
 
 @media (max-width:800px) {
   .grid {
